@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import icon from "../icons/ConvertedLogo20.svg";
+import { Link, NavLink } from 'react-router-dom';
 import Typed from 'react-typed'
+
+
 function Hero() {
     const [open, setopen] = useState(false)
     return (
@@ -7,9 +11,12 @@ function Hero() {
             <nav x-data="{ isOpen: false }" class="relative bg-white ">
                 <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                     <div class="flex items-center justify-between">
-                        <a href="/">
-                            <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="" />
-                        </a>
+                        <NavLink
+                            to={{ pathname: `/` }}
+                            className="flex w-[20vw] items-center">
+                            <img className="h-[40px]" src={icon} alt="Reload page" />
+                            <p className="text-3xl text-[grey] font-bold px-2.5 py-0 mx-0">iNotes</p>
+                        </NavLink>
 
                         <div class="flex md:hidden" onClick={(e) => { setopen(!open) }}>
                             <button x-cloak type="button" class="text-gray-500 dark: hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
@@ -32,11 +39,11 @@ function Hero() {
 
                     <div x-cloak class="hidden absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
                         <div class="flex flex-col md:flex-row md:mx-6">
-                            <a class="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Home</a>
+                            {/* <a class="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Home</a> */}
                             {/* <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Shop</a> */}
                             <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Services</a>
-                            <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Login</a>
-                            <button class="w-full px-5 py-2 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Try Now</button>
+                            <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="/signin">Login</a>
+                            <a class="w-full px-5 py-2 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" href='/signup'>Try Now</a>
                         </div>
 
                         {/* <div class="flex justify-center md:block">
@@ -60,7 +67,7 @@ function Hero() {
                                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Services</a>
                                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Login</a>
 
-                                <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Try Now</a>
+                                <a class="my-2 text-gray-700 transition-colors duration-300 transform dark: hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="/signup">Try Now</a>
                             </div>
 
                             {/* <div class="flex justify-center md:block">
@@ -84,11 +91,11 @@ function Hero() {
                 <div class="items-center lg:flex">
                     <div class="w-full lg:w-1/2">
                         <div class="lg:max-w-lg">
-                            <h1 class="text-3xl font-semibold text-gray-800 dark:text-black lg:text-4xl">Best place to choose <br /> your <span class="text-blue-500 ">clothes</span></h1>
+                            <h1 class="text-3xl font-semibold text-gray-800 dark:text-black lg:text-4xl">Experience iNotes: <br /> Your <span class="text-blue-500 ">All-in-One Solution</span></h1>
 
-                            <p class="mt-3 text-gray-600 dark:text-black-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro beatae error laborum ab amet sunt recusandae? Reiciendis natus perspiciatis optio.</p>
+                            <p class="mt-3 text-gray-600 dark:text-black-400">Unlock the power of seamless note-taking, translation, transcription, and more with our feature-packed iNotes application.</p>
 
-                            <button class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Try Now</button>
+                            <a class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" href="/signup">Try Now</a>
                         </div>
                     </div>
 
