@@ -8,12 +8,16 @@ import OurServices from "./Landing_page_molecules/OurServices";
 import AboutUs from "./Landing_page_molecules/AboutUs";
 import JoinUs from "./Landing_page_molecules/JoinUs";
 import Footer from "./Landing_page_molecules/Footer";
+import "./Scrollbar.css";
+
+
 function LandingPage(){
   return (
-    <div>
+    <div id="scrollbar-chat" className="">
       {/* <Navbar /> */}
       <Hero />
       <Introduction />
+      <OurServices />
       
     </div>
   )

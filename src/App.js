@@ -68,7 +68,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
           </Routes>
         )}
-        {((privateRoutes.includes(window.location.pathname))) ? (
+        {privateRoutes.includes(window.location.pathname) && (
           <div className="h-[100vh] bg-[rgba(239,252,252,0.9)]">
             <Navbar />
             <div className='flex h-[91%]'>
@@ -92,7 +92,9 @@ function App() {
               </div>
             </div>
           </div>
-        ) : (
+        ) }
+        
+        {!publicRoutes.includes(window.location.pathname) && !privateRoutes.includes(window.location.pathname) &&  (
           <div className='w-full h-[100vh] flex items-center text-center justify-center '>
             <div className='flex w-[50%]  justify-center font-mono '>
               <SearchX
