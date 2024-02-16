@@ -1,0 +1,25 @@
+{
+  "short_name": "iNOTES",
+  "name": "iNOTES",
+  "icons": [
+    {
+      "src": "siteIcon.png",
+      "type": "image/png",
+      "sizes": "985x985"
+    },
+    {
+      "src": "ConvertedLogo20.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ConvertedLogo20.svg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

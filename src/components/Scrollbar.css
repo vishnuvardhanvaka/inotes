@@ -1,0 +1,90 @@
+@media (min-width: 500px) {
+  
+    #scrollbar::-webkit-scrollbar {
+      width: 8px;
+      height: 2px;
+      
+    }
+    
+    #scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+      margin-top:10px;
+    }
+    
+    #scrollbar::-webkit-scrollbar-thumb {
+      background: #bab9b9;
+      border-radius: 10px;
+  
+    }
+    
+    #scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #999999;
+      cursor:pointer;
+    }
+    
+    #scrollbar::-webkit-scrollbar-thumb:vertical:active {
+      background-color: #757373;
+    }
+    
+  }
+
+  @media (min-width: 500px) {
+  
+    #scrollbar-chat::-webkit-scrollbar {
+      width: 4px;
+      height: 2px;
+      
+    }
+    
+    #scrollbar-chat::-webkit-scrollbar-track {
+      background: transparent;
+      margin-top:10px;
+    }
+    
+    #scrollbar-chat::-webkit-scrollbar-thumb {
+      background: #bab9b9;
+      border-radius: 10px;
+  
+    }
+    
+    #scrollbar-chat::-webkit-scrollbar-thumb:hover {
+      background: #999999;
+      cursor:pointer;
+    }
+    
+    #scrollbar::-webkit-scrollbar-thumb:vertical:active {
+      background-color: #757373;
+    }
+    
+  }
+
+  @media (min-width: 500px) {
+  
+    #scrollbar-textArea::-webkit-scrollbar {
+      width: 0px;
+      height: 2px;
+      
+    }
+    
+    #scrollbar-textArea::-webkit-scrollbar-track {
+      background: transparent;
+      margin-top:10px;
+    }
+    
+    #scrollbar-textArea::-webkit-scrollbar-thumb {
+      background: #bab9b9;
+      border-radius: 10px;
+  
+    }
+    
+    #scrollbar-textArea::-webkit-scrollbar-thumb:hover {
+      background: #999999;
+      cursor:pointer;
+    }
+    
+    #scrollbar::-webkit-scrollbar-thumb:vertical:active {
+      background-color: #757373;
+    }
+    
+  }
+  

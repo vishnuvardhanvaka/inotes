@@ -1,0 +1,432 @@
+html {
+    scroll-behavior: smooth;
+    
+  }
+  .noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .noSelect:focus {
+    outline: none;
+  }
+  
+  .chatshell {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    fill: aquamarine;
+    
+    
+  }
+  
+  .chatheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #ffffff;
+    color: rgb(89, 88, 88);
+  }
+  .chatheader .logo img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .chatheader .userprofile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+    
+  }
+  
+  .chatmain {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .chatcontainer {
+    width: 600px;
+    background-color: rgb(235, 238, 253);
+    border-radius: 10px;
+  
+  }
+  
+  .chatmessages {
+    height: 300px;
+    margin:10px;
+    margin-top:1px;
+    background-color: rgb(235, 238, 253);
+    overflow-y: auto;
+    padding: 5px;
+    
+  }
+  .chatmessages .bordersend{
+    display: flex;
+    justify-content: end;
+    margin-top:20px;
+    padding:5px;
+    
+  }
+  .chatmessages .borderreceive{
+    padding:5px;
+    margin-top: 20px;
+  }
+  
+  .chatmessages .sent {
+    background-color: rgb(108, 234, 254);
+    color: rgb(42, 41, 41);
+    display: inline-block;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .chatmessages .received {
+    background-color: #ffffff;
+    color: black;
+    display: inline-flex;
+    text-align: left;
+    margin:0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    
+  }
+  .chatmessages .received1 {
+    background-color: #ffffff;
+    color: black;
+    display: inline-flex;
+    text-align: center;
+    margin:0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+  }
+  .sendicon1 {
+    width: 35px; 
+    height: 35px;
+    fill: #191919; 
+  }
+  .sendicon2 {
+    width: 35px; 
+    height: 35px; 
+    fill: #acacad; 
+  }
+  .sendicon1:hover , .sendicon2:hover{
+    cursor: pointer;
+  }
+  
+  
+  .chatinput {
+    background-color: rgb(235, 238, 253);
+    
+  }
+  
+  .chatinput form {
+    margin:3px;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    padding-bottom: 0px;
+  }
+  
+  .chatinput input {
+    
+    background-color: white;
+    flex-grow: 1;
+    padding: 20px;
+    padding-right: 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(91, 91, 91);
+    
+    font-size: 1.1em;
+    
+  }
+  .chatinput input:hover{
+    border: 1px solid rgb(0, 0, 0);
+  }
+  .chatinput input:focus{
+    border: 2px solid blue;
+  }
+  
+  .chatinput button{
+    border:none;
+  }
+  
+  
+  
+  p{
+    margin:auto auto;
+    text-align: center;
+    padding:10px 10px;
+    font-size: 0.8em;
+  }
+  
+  .chatmessages {
+    overflow-y: scroll;
+  }
+  
+  .chatmessages::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+  }
+  
+  .chatmessages::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chatmessages::-webkit-scrollbar-thumb {
+    background: #bab9b9;
+    border-radius: 10px;
+  }
+  
+  .chatmessages::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+    cursor:pointer;
+  }
+  
+  .chatmessages::-webkit-scrollbar-thumb:vertical:active {
+    background-color: #757373;
+  }
+
+
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ------------------Styles for mobile devices ------------------------------------------------*/
+  
+  
+  
+  
+  
+  @media (max-width: 960px) {
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    .chatshell {
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      fill: aquamarine;
+      height:100vh;
+      
+    }
+    
+    .chatheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      background-color: #ffffff;
+      color: rgb(89, 88, 88);
+      border:2px solid red;
+    }
+    .chatheader .logo img{
+      width: 40px;
+      height: 40px;
+    }
+    
+    
+    .chatheader .userprofile img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+      
+      
+    }
+    
+    .chatmain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      position:relative;
+      border:2px solid red;
+    }
+    
+    .chatcontainer {
+    background-color: rgb(235, 238, 253);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+      
+    
+    }
+    
+    .chatmessages {
+      flex-grow: 1;
+      background-color: rgb(235, 238, 253);
+      overflow-y: auto;
+      padding: 5px;
+      
+      
+      
+    }
+    .chatmessages .bordersend{
+      display: flex;
+      justify-content: end;
+      margin-top:20px;
+      padding:5px;
+      
+    }
+    .chatmessages .borderreceive{
+      padding:5px;
+      margin-top: 20px;
+    }
+    
+    .chatmessages .sent {
+      background-color: rgb(108, 234, 254);
+      color: rgb(42, 41, 41);
+      display: inline-block;
+      border-radius: 10px;
+      border-top-right-radius: 0px;
+      text-align: left;
+      padding: 10px;
+    }
+  
+    
+    .chatmessages .received {
+      background-color: #ffffff;
+      color: black;
+      display: inline-flex;
+      text-align: left;
+      margin:0 auto;
+      padding: 15px;
+      border-radius: 10px;
+      border-top-left-radius: 0px;
+      
+    }
+    .chatmessages .received1 {
+      background-color: #ffffff;
+      color: black;
+      display: inline-flex;
+      text-align: center;
+      margin:0 auto;
+      padding: 15px;
+      border-radius: 10px;
+      
+    }
+    
+    .chatinput {
+      background-color: rgb(235, 238, 253);
+      border:2px solid red;
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      background-color: rgb(235, 238, 253);
+      
+    }
+    
+    .chatinput form {
+      margin:3px;
+      display: flex;
+      flex-direction: row;
+      padding:10px;
+      padding-bottom: 0px;
+    }
+    
+    .chatinput input {
+      background-color: white;
+      flex-grow: 1;
+      padding: 20px;
+      padding-right: 10px;
+      border-radius: 50px;
+      border: 1px solid rgb(91, 91, 91);
+      font-size: 1.1em;
+      
+    }
+    .chatinput input:hover{
+      border: 1px solid rgb(0, 0, 0);
+    }
+    .chatinput input:focus{
+      border: 2px solid blue;
+    }
+    .sendicon1 {
+      width: 35px; 
+      height: 35px;
+      fill: #191919; 
+    }
+    .sendicon2 {
+      width: 35px; 
+      height: 35px; 
+      fill: #acacad; 
+    }
+    .chatinput button{
+      background-color: transparent;
+    }
+  
+    p{
+      margin:auto auto;
+      text-align: center;
+      padding:10px 10px;
+      font-size: 0.8em;
+    }
+    .chatcontainer {
+      width: 100%;
+      
+    }
+    p{
+      margin:auto auto;
+      text-align: center;
+      padding:10px 10px;
+      font-size: 0.7em;
+    }
+  
+    .chatmessages {
+      overflow-y: auto;
+      
+    }
+  
+  
+    .chatinput input {
+      margin-right: 5px;
+    }
+    
+  }
+  
+  /* Styles for tablet devices */
+  @media (min-width: 961px) and (max-width: 1023px) {
+    .chatcontainer {
+      width: 80%;
+    }
+  
+    .chatmessages {
+      height: 250px;
+    }
+    
+  }
