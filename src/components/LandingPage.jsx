@@ -18,6 +18,7 @@ function LandingPage(){
       <Hero />
       <Introduction />
       <OurServices />
+      <Footer />
       
     </div>
   )
