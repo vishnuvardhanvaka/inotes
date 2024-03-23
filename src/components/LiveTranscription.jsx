@@ -41,7 +41,7 @@ const LiveTranscription = () => {
     return (
         <div className=' w-full h-full flex flex-col items-center'>
             <div className='text-center m-1 text-3xl items-center justify-center'>
-                Text to Speech
+                Live Transcription
             </div>
             <div className='w-[70%] relative flex'>
                 <textarea
